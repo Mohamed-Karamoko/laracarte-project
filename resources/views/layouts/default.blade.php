@@ -22,6 +22,18 @@
         {
             margin: 4em 0;
         }
+
+        .btn-bg
+        {
+            background-color: black;
+            color: #fff;
+        }
+
+        .btn-bg:hover
+        {
+            background-color: black;
+            color: #fff;
+        }
     </style>
 </head>
 <body>

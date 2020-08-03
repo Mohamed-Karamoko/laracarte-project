@@ -25,7 +25,7 @@
                     </div>
 
                     <div class="form-group">
-                        <button class="btn btn-primary btn-block">Submit Enquiry &raquo;</button>
+                        <button class="btn btn-primary btn-block btn-bg">Submit Enquiry &raquo;</button>
                     </div>
                 </form>
             </div>
