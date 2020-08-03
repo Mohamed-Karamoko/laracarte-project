@@ -28,7 +28,7 @@
     @include('layouts/partials/_nav')
 
     @yield('content')
-
+    
     @include('layouts/partials/_footer')
 
 <!-- Jquery -->
