@@ -14,7 +14,6 @@ class ContactMessageCreated extends Mailable
     public $name;
     public $email;
     public $msg;
-
     /**
      * Create a new message instance.
      *
@@ -34,6 +33,6 @@ class ContactMessageCreated extends Mailable
      */
     public function build()
     {
-        return $this->view('emails.messages.created');
+        return $this->markdown('emails.messages.created');
     }
 }
