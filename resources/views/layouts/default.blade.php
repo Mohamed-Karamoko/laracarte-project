@@ -31,8 +31,9 @@
 
         .btn-bg:hover
         {
-            background-color: black;
+            background-color: green;
             color: #fff;
+            outline: none;
         }
     </style>
 </head>

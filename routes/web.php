@@ -1,5 +1,7 @@
 <?php
 
+use App\Mail\ContactMessageCreated;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -21,9 +23,18 @@ Route::get('/about', [
     'uses' => 'PagesController@about'
 ]);
 
+Route::get('/test-email', function(){
+    return new ContactMessageCreated('Mohamed', 'webmaster.karamoko@gmail.com', 'Merci pour Laracrte.');
+});
+
 Route::get('/contact', [
     'as' => 'contact_path',
-    'uses' => 'MessagesController@create'
+    'uses' => 'ContactsController@create'
+]);
+
+Route::post('/contact', [
+    'as' => 'contact_path',
+    'uses' => 'ContactsController@store'
 ]);
 
 /*Route::get('/', 'PagesController@home')->name('root_path');
